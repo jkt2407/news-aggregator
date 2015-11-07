@@ -77,13 +77,11 @@ APP.Main = (function() {
 
     // Tick down. When zero we can batch in the next load.
     storyLoadCount--;
-  }
-
 
     // Colorize on complete.
 //    if (storyLoadCount === 0)
 //      colorizeAndScaleStories();
-
+  }
 
   function onStoryClick(details) {
     if (details.url)
@@ -225,7 +223,7 @@ APP.Main = (function() {
     var loadThreshold = (main.scrollHeight - main.offsetHeight -
         LAZY_LOAD_THRESHOLD);
     if (main.scrollTop > loadThreshold)
-      requstAnimationFrame(loadStoryBatch);
+      requestAnimationFrame(loadStoryBatch);
   });
 
   function loadStoryBatch() {
