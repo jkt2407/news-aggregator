@@ -79,12 +79,11 @@ APP.Main = (function() {
     storyLoadCount--;
   }
 
-    }
 
     // Colorize on complete.
 //    if (storyLoadCount === 0)
 //      colorizeAndScaleStories();
-  }
+
 
   function onStoryClick(details) {
     if (details.url)
